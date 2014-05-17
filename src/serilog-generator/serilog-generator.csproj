@@ -57,6 +57,7 @@
     <Compile Include="Configuration\CommandLineDslParser.cs" />
     <Compile Include="Configuration\CommandLineReader.cs" />
     <Compile Include="Configuration\Directive.cs" />
+    <Compile Include="Enrichers\SerialNumberEnricher.cs" />
     <Compile Include="Model\CartItem.cs" />
     <Compile Include="Model\Catalog.cs" />
     <Compile Include="Actors\Administrator.cs" />
