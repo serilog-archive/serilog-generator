@@ -2,6 +2,7 @@
 using System.Collections.Concurrent;
 using System.Linq;
 using Serilog.Generator.Actors;
+using Serilog.Generator.Configuration;
 using Serilog.Generator.Model;
 
 namespace Serilog.Generator
@@ -11,6 +12,7 @@ namespace Serilog.Generator
         static void Main()
         {
             Log.Logger = new LoggerConfiguration()
+                .ReadCommandLine()
                 .WriteTo.ColoredConsole()
                 .Enrich.WithThreadId()
                 .Enrich.WithProperty("Application", "e-Commerce")
