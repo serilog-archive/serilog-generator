@@ -3,6 +3,7 @@ using System.Collections.Concurrent;
 using System.Linq;
 using Serilog.Generator.Actors;
 using Serilog.Generator.Configuration;
+using Serilog.Generator.Enrichers;
 using Serilog.Generator.Model;
 
 namespace Serilog.Generator
@@ -16,6 +17,7 @@ namespace Serilog.Generator
                 .WriteTo.ColoredConsole()
                 .Enrich.WithThreadId()
                 .Enrich.WithProperty("Application", "e-Commerce")
+                .Enrich.With<SerialNumberEnricher>()
                 .MinimumLevel.Debug()
                 .CreateLogger();
 
