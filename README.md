@@ -54,7 +54,7 @@ So, the command-line above is the same as:
 
 (When you enter this into the _Visual Studio_ project settings in step (4), don't include the `serilog-generator` executable part, since that's specified in step (3).)
 
-The semantics match those of the `Serilog.Extras.AppSettings` [package](https://github.com/serilog/serilog/wiki/AppSettings).
+The semantics match those of the `Serilog.Extras.AppSettings` [package](https://github.com/serilog/serilog/wiki/AppSettings). The command-line syntax is very strict; use double-dashes, quotes and so-on exactly as shown above (we'd like to improve this!).
 
 ### 3. Debug your project
 
