@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -89,7 +90,16 @@ namespace Serilog.Generator.Configuration
             var extensionAssemblies = new List<Assembly> { typeof(ILogger).Assembly, typeof(RollingFileSink).Assembly };
             foreach (var usingDirective in directives.Where(d => d.Operator.Equals("using")))
             {
-                extensionAssemblies.Add(Assembly.Load(usingDirective.Value));
+                Assembly assembly;
+                if (File.Exists(usingDirective.Value))
+                {
+                    assembly = Assembly.LoadFrom(usingDirective.Value);
+                }
+                else
+                {
+                    assembly = Assembly.Load(usingDirective.Value);
+                }
+                extensionAssemblies.Add(assembly);
             }
 
             return extensionAssemblies
