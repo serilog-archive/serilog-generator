@@ -10,7 +10,7 @@ The goals are that:
 * We create higher-quality sinks and servers for Serilog by exercising them comprehensively
 * We make it easier to build and test new sinks, without having n-different `Demo.*` projects in the Serilog solution
 
-This is still in the early stages, the plan is to ship two packages: a library via NuGet containing the "simulation", and an executable `serilog-generator.exe` via Chocolatey.
+This is still in the early stages, the plan is to ship three packages: a library via NuGet containing the "simulation", a 'tools' package also shipped via NuGet with `serilog-generator.exe` that can be installed into Sink projects, and an additional package via Chocolatey.
 
 The executable will support the same options as the `Serilog.Extras.AppSettings` [package](https://github.com/serilog/serilog/wiki/AppSettings), along the lines of:
 
