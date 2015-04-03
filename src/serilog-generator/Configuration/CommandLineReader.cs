@@ -17,6 +17,9 @@ namespace Serilog.Generator.Configuration
         {
             var directives = CommandLineDslParser.ParseCommandLine(Environment.CommandLine);
 
+            if (!directives.Any(d => d.Operator == "quiet"))
+                loggerConfiguration.WriteTo.ColoredConsole();
+
             var sinkDirectives = (from wt in directives
                                   where wt.Operator == "write-to"
                                   let call = new

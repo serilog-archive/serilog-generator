@@ -14,7 +14,6 @@ namespace Serilog.Generator
         {
             Log.Logger = new LoggerConfiguration()
                 .ReadCommandLine()
-                .WriteTo.ColoredConsole()
                 .Enrich.WithThreadId()
                 .Enrich.WithProperty("Application", "e-Commerce")
                 .Enrich.With<SerialNumberEnricher>()
