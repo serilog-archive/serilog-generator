@@ -36,13 +36,13 @@
     <ApplicationIcon>serilog-generator.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Serilog, Version=1.4.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+    <Reference Include="Serilog, Version=1.5.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Serilog.1.4.204\lib\net45\Serilog.dll</HintPath>
+      <HintPath>..\..\packages\Serilog.1.5.1\lib\net45\Serilog.dll</HintPath>
     </Reference>
-    <Reference Include="Serilog.FullNetFx, Version=1.4.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+    <Reference Include="Serilog.FullNetFx, Version=1.5.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Serilog.1.4.204\lib\net45\Serilog.FullNetFx.dll</HintPath>
+      <HintPath>..\..\packages\Serilog.1.5.1\lib\net45\Serilog.FullNetFx.dll</HintPath>
     </Reference>
     <Reference Include="Sprache">
       <HintPath>..\..\packages\Sprache.1.10.0.36\lib\net40\Sprache.dll</HintPath>
@@ -56,6 +56,7 @@
     <Compile Include="Actors\TrafficReferral.cs" />
     <Compile Include="Configuration\CommandLineDslParser.cs" />
     <Compile Include="Configuration\CommandLineReader.cs" />
+    <Compile Include="Configuration\CommandLineSettings.cs" />
     <Compile Include="Configuration\Directive.cs" />
     <Compile Include="Enrichers\SerialNumberEnricher.cs" />
     <Compile Include="Model\CartItem.cs" />

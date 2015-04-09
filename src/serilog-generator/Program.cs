@@ -13,7 +13,7 @@ namespace Serilog.Generator
         static void Main()
         {
             Log.Logger = new LoggerConfiguration()
-                .ReadCommandLine()
+                .ReadFrom.CommandLine()
                 .Enrich.WithThreadId()
                 .Enrich.WithProperty("Application", "e-Commerce")
                 .Enrich.With<SerialNumberEnricher>()
