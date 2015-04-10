@@ -15,21 +15,15 @@ namespace Serilog.Generator.Tests.Configuration
             Assert.AreEqual(3, d.Length);
 
             var u = d[0];
-            Assert.AreEqual("using", u.Operator);
-            Assert.IsNull(u.Key1);
-            Assert.IsNull(u.Key2);
+            Assert.AreEqual("using", u.Key);
             Assert.AreEqual("C:\\foo.bar.dll", u.Value);
 
             var w = d[1];
-            Assert.AreEqual("write-to", w.Operator);
-            Assert.AreEqual("Foo", w.Key1);
-            Assert.AreEqual("bar", w.Key2);
+            Assert.AreEqual("write-to:Foo.bar", w.Key);
             Assert.AreEqual("baz", w.Value);
 
             var wn = d[2];
-            Assert.AreEqual("write-to", wn.Operator);
-            Assert.AreEqual("Quux", wn.Key1);
-            Assert.IsNull(wn.Key2);
+            Assert.AreEqual("write-to:Quux", wn.Key);
             Assert.IsNull(wn.Value);
         }
     }
