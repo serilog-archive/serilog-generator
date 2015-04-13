@@ -12,6 +12,8 @@ namespace Serilog.Generator
     {
         static void Main()
         {
+            CurrentDirectoryAssemblyLoader.Install();
+
             Log.Logger = new LoggerConfiguration()
                 .ReadFrom.CommandLine()
                 .Enrich.WithThreadId()

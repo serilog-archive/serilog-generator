@@ -58,6 +58,7 @@
     <Compile Include="Configuration\CommandLineReader.cs" />
     <Compile Include="Configuration\CommandLineSettings.cs" />
     <Compile Include="Configuration\Directive.cs" />
+    <Compile Include="Configuration\CurrentDirectoryAssemblyLoader.cs" />
     <Compile Include="Enrichers\SerialNumberEnricher.cs" />
     <Compile Include="Model\CartItem.cs" />
     <Compile Include="Model\Catalog.cs" />
