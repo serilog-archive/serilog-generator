@@ -10,7 +10,7 @@ namespace Serilog.Generator.Configuration
         {
             AppDomain.CurrentDomain.AssemblyResolve += (s, e) =>
             {
-                var assemblyPath = Path.Combine(Environment.CurrentDirectory, e.Name + ".dll");
+                var assemblyPath = Path.Combine(Environment.CurrentDirectory, new AssemblyName(e.Name).Name + ".dll");
                 return !File.Exists(assemblyPath) ? null : Assembly.LoadFrom(assemblyPath);
             };
         }
