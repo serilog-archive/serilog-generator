@@ -1,4 +1,4 @@
-serilog-generator
+serilog-generator [![Build status](https://ci.appveyor.com/api/projects/status/769o3i4sws3him7r/branch/master?svg=true)](https://ci.appveyor.com/project/serilog/serilog-generator/branch/master)
 =================
 
 A simulation that generates simple log data through Serilog, ideal for testing sinks or log servers.
@@ -9,8 +9,6 @@ The goals are that:
 
 * We create higher-quality sinks and servers for Serilog by exercising them comprehensively
 * We make it easier to build and test new sinks, without having n-different `Example.*` projects in the Serilog solution
-
-This is still in the early stages, you might find a few rough edges, but it _works on my machine (tm)_.
 
 How do I use it?
 ----------------
@@ -40,7 +38,7 @@ This is a 'tools' package, so it won't change assembly references.
 The `serilog-generator.exe` program accepts command-line arguments indicating the assembly file and sink methods to use. A full command line might look like:
 
 ```
-serilog-generator --using="Serilog.Sinks.CouchDB.dll" --write-to:CouchDB.databaseUrl="http://my-couch/"
+serilog-generator --using="Serilog.Sinks.CouchDB" --write-to:CouchDB.databaseUrl="http://my-couch/"
 ```
 
 * **`--using`** - Provide either an assembly name, or the path to an assembly file.
