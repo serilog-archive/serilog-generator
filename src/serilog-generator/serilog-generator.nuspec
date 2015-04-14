@@ -12,11 +12,11 @@
     <tags>serilog logging nosql events semantic structured</tags>
   </metadata>
   <files>
-    <file src="src\serilog-generator\bin\x64\Release\serilog-generator.exe" target="tools" />
-    <file src="src\serilog-generator\bin\x64\Release\serilog-generator.exe.config" target="tools" />
-    <file src="src\serilog-generator\bin\x64\Release\serilog-generator.pdb" target="tools" />
-    <file src="src\serilog-generator\bin\x64\Release\Sprache.dll" target="tools" />
-    <file src="src\serilog-generator\bin\x64\Release\Serilog.dll" target="tools" />
-    <file src="src\serilog-generator\bin\x64\Release\Serilog.FullNetFx.dll" target="tools" />
+    <file src="bin\x64\Release\serilog-generator.exe" target="tools" />
+    <file src="bin\x64\Release\serilog-generator.exe.config" target="tools" />
+    <file src="bin\x64\Release\serilog-generator.pdb" target="tools" />
+    <file src="bin\x64\Release\Sprache.dll" target="tools" />
+    <file src="bin\x64\Release\Serilog.dll" target="tools" />
+    <file src="bin\x64\Release\Serilog.FullNetFx.dll" target="tools" />
   </files>
 </package>
