@@ -4,7 +4,7 @@ using Serilog.Generator.Model;
 
 namespace Serilog.Generator.Actors
 {
-    class TrafficReferral
+    public class TrafficReferral
     {
         readonly ConcurrentBag<Customer> _customers;
         readonly Catalog _catalog;

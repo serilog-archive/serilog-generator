@@ -5,7 +5,7 @@ using Serilog.Generator.Model;
 
 namespace Serilog.Generator.Actors
 {
-    class Customer : IDisposable
+    public class Customer : IDisposable
     {
         readonly Catalog _catalog;
         readonly ActiveAgent _ai;
