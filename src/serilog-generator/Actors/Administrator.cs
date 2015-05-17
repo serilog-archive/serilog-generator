@@ -3,7 +3,7 @@ using Serilog.Generator.Model;
 
 namespace Serilog.Generator.Actors
 {
-    class Administrator
+    public class Administrator
     {
         readonly Catalog _catalog;
         readonly ActiveAgent _ai;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Serilog.Generator.Model
 {
-    class Catalog
+    public class Catalog
     {
         readonly IList<Product> _products;
         readonly Random _random = new Random();
