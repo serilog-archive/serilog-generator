@@ -17,6 +17,5 @@
     <file src="bin\x64\Release\serilog-generator.pdb" target="tools" />
     <file src="bin\x64\Release\Sprache.dll" target="tools" />
     <file src="bin\x64\Release\Serilog.dll" target="tools" />
-    <file src="bin\x64\Release\Serilog.FullNetFx.dll" target="tools" />
   </files>
 </package>
