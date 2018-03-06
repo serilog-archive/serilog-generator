@@ -38,13 +38,13 @@ This is a 'tools' package, so it won't change assembly references.
 The `serilog-generator.exe` program accepts command-line arguments indicating the assembly file and sink methods to use. A full command line might look like:
 
 ```
-serilog-generator --using="Serilog.Sinks.CouchDB" --write-to:CouchDB.databaseUrl="http://my-couch/"
+serilog-generator --using="Serilog.Sinks.File" --write-to:File.path="test.txt"
 ```
 
-Or
+Or on .Net Core (*nix)
 
 ```
-serilog-generator --using="Serilog.Sinks.Console" --write-to:CouchDB.databaseUrl="http://my-couch/"
+dotnet serilog-generator.dll --using=\"Serilog.Sinks.File\" --write-to:File.path=\"test.txt\"
 ```
 
 * **`--using`** - Provide either an assembly name, or the path to an assembly file.

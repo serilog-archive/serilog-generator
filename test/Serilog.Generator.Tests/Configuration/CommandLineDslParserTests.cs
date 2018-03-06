@@ -28,9 +28,8 @@ namespace Serilog.Generator.Tests.Configuration
         }
 
         [Fact]
-        public void UseCase()
+        public void OsxUseCase()
         {
-
             var d = CommandLineDslParser.ParseCommandLine("dotnet src/serilog-generator/out/serilog-generator.dll --using=\"Serilog.Sinks.File\" --write-to:File.path=\"test.txt\"").ToArray();
             
             Assert.Equal(2, d.Length);

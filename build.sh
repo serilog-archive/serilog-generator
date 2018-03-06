@@ -1,9 +1,9 @@
 #!/bin/sh -xe
 
+dotnet restore
+
 # Test 
-
 cd test/Serilog.Generator.Tests
-
 dotnet test 
 
 cd ..
