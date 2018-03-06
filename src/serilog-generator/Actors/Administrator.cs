@@ -1,4 +1,5 @@
 ﻿using System;
+using Serilog.Core;
 using Serilog.Generator.Model;
 
 namespace Serilog.Generator.Actors

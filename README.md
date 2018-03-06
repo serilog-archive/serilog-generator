@@ -41,6 +41,12 @@ The `serilog-generator.exe` program accepts command-line arguments indicating th
 serilog-generator --using="Serilog.Sinks.CouchDB" --write-to:CouchDB.databaseUrl="http://my-couch/"
 ```
 
+Or
+
+```
+serilog-generator --using="Serilog.Sinks.Console" --write-to:CouchDB.databaseUrl="http://my-couch/"
+```
+
 * **`--using`** - Provide either an assembly name, or the path to an assembly file.
 * **`--write-to`** - The syntax of this command is _Method.parameter_; the parameter part is optional if no parameters need to be supplied to the method; specify `--write-to` once for each required parameter.
 

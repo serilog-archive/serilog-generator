@@ -5,11 +5,11 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{775D3637-43DE-419E-A81B-29708CB387C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "serilog-generator", "src\serilog-generator\serilog-generator.csproj", "{7B89F65F-BAB0-4969-9349-65BC44A41D4D}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{419096D9-752C-466F-972B-6C4B4FB8742A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serilog.Generator.Tests", "test\Serilog.Generator.Tests\Serilog.Generator.Tests.csproj", "{41478E7D-4B71-441E-B043-C60A2A768ABF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "serilog-generator", "src\serilog-generator\serilog-generator.csproj", "{DBE1B04A-EBC0-4326-8BD0-6DE5162B3894}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,16 +21,6 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7B89F65F-BAB0-4969-9349-65BC44A41D4D}.Debug|Any CPU.ActiveCfg = Debug|x64
-		{7B89F65F-BAB0-4969-9349-65BC44A41D4D}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{7B89F65F-BAB0-4969-9349-65BC44A41D4D}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{7B89F65F-BAB0-4969-9349-65BC44A41D4D}.Debug|x64.ActiveCfg = Debug|x64
-		{7B89F65F-BAB0-4969-9349-65BC44A41D4D}.Debug|x64.Build.0 = Debug|x64
-		{7B89F65F-BAB0-4969-9349-65BC44A41D4D}.Release|Any CPU.ActiveCfg = Release|x64
-		{7B89F65F-BAB0-4969-9349-65BC44A41D4D}.Release|Mixed Platforms.ActiveCfg = Release|x64
-		{7B89F65F-BAB0-4969-9349-65BC44A41D4D}.Release|Mixed Platforms.Build.0 = Release|x64
-		{7B89F65F-BAB0-4969-9349-65BC44A41D4D}.Release|x64.ActiveCfg = Release|x64
-		{7B89F65F-BAB0-4969-9349-65BC44A41D4D}.Release|x64.Build.0 = Release|x64
 		{41478E7D-4B71-441E-B043-C60A2A768ABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{41478E7D-4B71-441E-B043-C60A2A768ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41478E7D-4B71-441E-B043-C60A2A768ABF}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
@@ -41,12 +31,24 @@ Global
 		{41478E7D-4B71-441E-B043-C60A2A768ABF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{41478E7D-4B71-441E-B043-C60A2A768ABF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{41478E7D-4B71-441E-B043-C60A2A768ABF}.Release|x64.ActiveCfg = Release|Any CPU
+		{DBE1B04A-EBC0-4326-8BD0-6DE5162B3894}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBE1B04A-EBC0-4326-8BD0-6DE5162B3894}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBE1B04A-EBC0-4326-8BD0-6DE5162B3894}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{DBE1B04A-EBC0-4326-8BD0-6DE5162B3894}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{DBE1B04A-EBC0-4326-8BD0-6DE5162B3894}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DBE1B04A-EBC0-4326-8BD0-6DE5162B3894}.Debug|x64.Build.0 = Debug|Any CPU
+		{DBE1B04A-EBC0-4326-8BD0-6DE5162B3894}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBE1B04A-EBC0-4326-8BD0-6DE5162B3894}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBE1B04A-EBC0-4326-8BD0-6DE5162B3894}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{DBE1B04A-EBC0-4326-8BD0-6DE5162B3894}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{DBE1B04A-EBC0-4326-8BD0-6DE5162B3894}.Release|x64.ActiveCfg = Release|Any CPU
+		{DBE1B04A-EBC0-4326-8BD0-6DE5162B3894}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{7B89F65F-BAB0-4969-9349-65BC44A41D4D} = {775D3637-43DE-419E-A81B-29708CB387C6}
 		{41478E7D-4B71-441E-B043-C60A2A768ABF} = {419096D9-752C-466F-972B-6C4B4FB8742A}
+		{DBE1B04A-EBC0-4326-8BD0-6DE5162B3894} = {775D3637-43DE-419E-A81B-29708CB387C6}
 	EndGlobalSection
 EndGlobal
