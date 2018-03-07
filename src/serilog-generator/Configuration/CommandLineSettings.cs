@@ -12,9 +12,7 @@ namespace Serilog.Generator.Configuration
                 .ToDictionary(kv => kv.Key, kv => kv.Value);
 
             if (!directives.ContainsKey("quiet"))
-                configuration.WriteTo.ColoredConsole();
-
-            directives.Add("using:_CommandLineSettingsSerilogFullNetFx", "Serilog.FullNetFx");
+                configuration.WriteTo.Console();
 
             configuration.ReadFrom.KeyValuePairs(directives);
         }

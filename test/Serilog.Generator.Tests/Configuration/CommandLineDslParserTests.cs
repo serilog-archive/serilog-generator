@@ -1,30 +1,47 @@
 ﻿using System.Linq;
-using NUnit.Framework;
+using Xunit;
 using Serilog.Generator.Configuration;
 
 namespace Serilog.Generator.Tests.Configuration
 {
-    [TestFixture]
+   
     public class CommandLineDslParserTests
     {
-        [Test]
+        [Fact]
         public void ParsesDirectives()
         {
             var d = CommandLineDslParser.ParseCommandLine("--using=\"C:\\foo.bar.dll\" --write-to:Foo.bar=\"baz\" --write-to:Quux").ToArray();
-
-            Assert.AreEqual(3, d.Length);
+            
+            Assert.Equal(3, d.Length);
 
             var u = d[0];
-            Assert.AreEqual("using", u.Key);
-            Assert.AreEqual("C:\\foo.bar.dll", u.Value);
+            Assert.Equal("using", u.Key);
+            Assert.Equal("C:\\foo.bar.dll", u.Value);
 
             var w = d[1];
-            Assert.AreEqual("write-to:Foo.bar", w.Key);
-            Assert.AreEqual("baz", w.Value);
+            Assert.Equal("write-to:Foo.bar", w.Key);
+            Assert.Equal("baz", w.Value);
 
             var wn = d[2];
-            Assert.AreEqual("write-to:Quux", wn.Key);
-            Assert.IsNull(wn.Value);
+            Assert.Equal("write-to:Quux", wn.Key);
+            Assert.Null(wn.Value);
+        }
+
+        [Fact]
+        public void OsxUseCase()
+        {
+            var d = CommandLineDslParser.ParseCommandLine("dotnet src/serilog-generator/out/serilog-generator.dll --using=\"Serilog.Sinks.File\" --write-to:File.path=\"test.txt\"").ToArray();
+            
+            Assert.Equal(2, d.Length);
+
+            var u = d[0];
+            Assert.Equal("using", u.Key);
+            Assert.Equal("Serilog.Sinks.File", u.Value);
+
+            var w = d[1];
+            Assert.Equal("write-to:File.path", w.Key);
+            Assert.Equal("test.txt", w.Value);
+ 
         }
     }
 }

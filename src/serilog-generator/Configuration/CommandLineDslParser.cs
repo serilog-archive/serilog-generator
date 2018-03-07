@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using Sprache;
+using Serilog;
+using Serilog.Core;
 
 namespace Serilog.Generator.Configuration
 {
@@ -22,7 +24,6 @@ namespace Serilog.Generator.Configuration
             from key in Key
             from val in Value.Optional()
             select new KeyValuePair<string, string>(key, val.GetOrDefault());
-
 
         public static IEnumerable<KeyValuePair<string, string>> ParseCommandLine(string commandLine)
         {
