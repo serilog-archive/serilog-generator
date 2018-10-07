@@ -13,7 +13,7 @@ only_commits:
   files:
     - serilog-generator.sln
     - src/serilog-generator/
-    - Build.ps1
+    - build.ps1
     - assets/
 deploy:
 - provider: NuGet
